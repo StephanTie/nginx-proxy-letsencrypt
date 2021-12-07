@@ -11,7 +11,7 @@ services:
          - extern  # Name of the network these two containers will share
         labels:
          - "com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy" # Label needed for Let's Encrypt companion container
-        volumes: # Volumes needed for container to configure proxes and access certificates genereated by Let's Encrypt companion container
+        volumes: # Volumes needed for container to configure proxies and access certificates genereated by Let's Encrypt companion container
          - /var/run/docker.sock:/tmp/docker.sock:ro
          - "./nginx-conf:/etc/nginx/conf.d"
          - "./nginx-vhost:/etc/nginx/vhost.d"
