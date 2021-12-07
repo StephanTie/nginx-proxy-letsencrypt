@@ -1,1 +1,7 @@
-certs
+certs/*
+html/*
+nginx-vhost/*
+!nginx-vhost/unrestricted_client_body_size.conf
+!nginx-conf
+nginx-conf/*
+!nginx-conf/unrestricted_client_body_size.conf
