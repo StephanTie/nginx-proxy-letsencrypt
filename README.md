@@ -13,9 +13,9 @@ edit daemon.json: sudo vi /etc/docker/daemon.json
 
 { "dns": ["8.8.8.8", "8.8.8.4"] }
 
-restart docker: sudo systemctl start dockerPrerequisites:
+restart docker: sudo systemctl start docker
 
-**** Step 2 - Starting nginx-proxy-letsencrypt container with docker-compose ** ** This step creates docker network webproxy ****
+**** Step 2 - Starting nginx-proxy-letsencrypt container with docker-compose ** ** This step creates docker network ${NETWORK) which is defined in .env ****
 
 cd /data (or any other place you want to keep your docker entities)
 
